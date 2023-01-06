@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="text-dark mt-5 lead">
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-8 col-md-4">
+				<div class="form-container">
+					<h1 class="text-center mb-3"> Changing Password </h1>
+					<form method='POST'> {% csrf_token %}
+					<label for='{{form.old_password.label}}'>{{form.old_password.label}}:</label>
+					{{form.old_password}}
+					<label for='{{form.new_password1.label}}'>New password:</label>
+					{{form.new_password1}}
+					<label for='{{form.new_password2.label}}'>New password confirmation:</label>
+					{{form.new_password2}}
+			<div id="passwordHelpBlock" class="form-text">
+				<li>Your password can’t be too similar to your other personal information.</li>
+				<li>Your password must contain at least 8 characters.</li>
+				<li>Your password can’t be a commonly used password.</li>
+				<li>Your password can’t be entirely numeric.</li>
+			</div>
+			<center><input type='submit' name='submit' value='submit' class='btn btn-outline-info w-50 mt-3'></center>
+		</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

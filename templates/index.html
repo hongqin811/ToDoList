@@ -1,0 +1,339 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="{% static 'toDoList/style.css' %}">
+	<title>Ayaka Simp's TodoList </title>
+	</head>
+
+<!-- 	<style>
+		.skill { width: 10%; height: 10%; }
+	</style> -->
+
+<body>
+	<!-- 	Navbar -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+		<div class="container">
+			<a href="#" class="navbar-brand">ToDoList Homepage</a>
+
+			<button 
+				class="navbar-toggler" 
+				type="button"
+				data-bs-toggle="collapse" 
+				data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			 <div class="collapse navbar-collapse" id="navmenu">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="#top" class="nav-link">Top</a>
+					</li>
+					<li class="nav-item">
+						<a href="#SignUp" class="nav-link">SignUp</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Intro" class="nav-link">Intro</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Skill" class="nav-link">Skill</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Showcase -->
+	<section id="top" class="bg-dark text-light pb-5 text-center text-sm-start">
+		<div class="container">
+			<div class="d-sm-flex align-items-center justify-content-between">
+				<div><h1><span class="text-info">Big Sister</span> Is Watching You </h1>
+					<h5 class="text-warning">Do your homework!!</h5>
+					<p class="lead my-4">
+						1. Teachers can see if students understand the materials being taught.</br>
+						2. Homework can reduce the stress and anxiety of test-taking.</br>
+						3. Assignments can be an effective way to discover learning disabilities.</br>
+						4. Parents are more involved in the learning process because of homework.</br>
+						5. Homework provides opportunities for students to use deeper research.</br>
+						6 . It creates opportunities to practice time management.
+					</p>
+					<button class="btn btn-primary btn-lg">I understand</button>
+				</div>
+
+
+				<img class="img-fluid w-30 d-none d-sm-block" src="{% static 'toDoList/image/ayaya.jpg' %}" alt="My image">
+			</div>
+		</div>
+	</section>
+
+	<section id="SignUp" class="bg-primary text-light p-5">
+		<div class="container-fluid">
+			<div class="d-md-flex justify-content-between align-items-center">
+				<h3 class="mb-3 mb-md-0">Sign Up To Be Ayaka Simp</h3>
+				<div class="input-group news-input">
+				  <input 
+					  type="text" 
+					  class="form-control" 
+					  placeholder="Your name">
+				  <button 
+				  	class="btn btn-dark btn-lg" 
+				  	type="button">Enter</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Boxes -->
+	<section id="Intro" class="p-5">
+		<div class="container">
+			<div class="row text-center g-4">
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">	
+							<div class="h1 mb-3">
+								<i class="bi bi-bookmark-heart-fill"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Background
+							</h3>
+							<p class="card-text text-start">
+								She is the eldest daughter of the Kamisato Clan and sister of Kamisato Ayato. Being beautiful, elegant, and graceful, the common-folk have nothing to bad-mouth Ayaka about. Because of her social status as the eldest daughter of the Kamisato Clan of the Yashiro Commission and as the Shirasagi Himegimi, Ayaka is seen as a model of perfection.
+							</p>
+							<a href="#" class="btn btn-primary">Simp</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card bg-secondary text-light">
+						<div class="card-body text-center">	
+							<div class="h1 mb-3">
+								<i class="bi bi-camera"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Appearance
+							</h3>
+							<p class="card-text text-start">
+								Ayaka is a female of slightly below average height. She keeps her long white-blue hair tied in a high ponytail by an armored headdress. Her hair is fitted into a hime cut, with the frontal portions on the sides separated by pink 3-petaled flower knots. Her light blue-gray eyes are accompanied by thick lashes and a mole underneath her left eye.
+							</p>
+							<a href="#" class="btn btn-dark">Beautiful</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="card bg-dark text-light">
+						<div class="card-body text-center">	
+							<div class="h1 mb-3">
+								<i class="bi bi-people"></i>
+							</div>
+							<h3 class="card-title mb-3">
+								Dress
+							</h3>
+							<p class="card-text text-start">
+								Her outfit, Flawless Radiance, is described as a kimono that displays the nobility and resilience of the Shirasagi Himegimi. It consists of a royal blue pleated knee-length skirt with an assortment of patterns, bearing gold accents and small white flower patterns, and black geta sandals with ankle-length white socks decorated by pink bows at the back. 
+							</p>
+							<a href="#" class="btn btn-primary">flawless</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ability -->
+	<section id="Skill" class="p-5">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md">
+					<img src="{% static 'toDoList/image/ayakaQ.png' %}" class="img-fluid" alt="">
+				</div>
+				<div class="col-md p-5">
+					<h2>
+						<img src="{% static 'toDoList/image/skillQ.png' %}" class="img-fluid skill" alt="">
+						Kamisato Art: Soumetsu 					
+					</h2>	
+					<p class="lead">
+						Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.</br>
+						<span class="h5">Frostflake Seki no To</span></br>
+						 - A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing 
+						 <span class="text-info">Cryo DMG</span></br>
+						 - The snowstorm explodes after its duration ends, dealing <span class="text-info">AoE Cryo DMG</span>.</br>
+					</p>	
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section class="p-5 bg-dark text-light">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-md p-5">
+					<h2>
+					<img src="{% static 'toDoList/image/skillA.png' %}" class="img-fluid skill" alt="">
+					Kamisato Art: Kabuki</h2>	
+					<p class="lead py-3">
+					<span class="h5">Normal Attack: </span>  Perform up to 5 rapid strikes.</br>
+					<span class="h5">Charged Attack: </span>  Consumes a certain amount of Stamina to unleash a continuous stream of sword ki.</br>
+					<span class="h5">Plunging Attack: </span>  Plunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.</br></p>
+					<p>
+					<h2><span class="text-info">
+					<img src="{% static 'toDoList/image/skillE.png' %}" class="img-fluid skill" alt="">
+					Kamisato Art: Hyouka</span></h2>
+					<span class="h5">Elemental Skill: </span></br>
+					Summons blooming ice to launch nearby opponents, dealing <span class="text-info">AoE Cryo DMG</span>.
+					</p>	
+				</div>
+				<div class="col-md">
+					<img src="{% static 'toDoList/image/ayakaE.png' %}" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="questions" class="p-5">
+		<div class="container">
+			<h2 class="text-center mb-4">Frequently Asked Questions</h2>
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+		</div> 
+	</section>
+
+	<section class="p-5 bg-primary">
+		<div class="container text-center text-white">
+			<h1> Our Instructors</h1>
+			<p class="lead mb-5"> Our instructors all have 5+ years working as a web developer in the indestry</p>
+		</div>
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="{% static 'toDoList/image/skillE.png' %}" class="round-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Title</h3>
+						<p class="card-text"> random text random text random text random text random text random text random text random text random text random text random text random text</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="{% static 'toDoList/image/skillE.png' %}" class="round-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Title</h3>
+						<p class="card-text"> random text random text random text random text random text random text random text random text random text random text random text random text</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="{% static 'toDoList/image/skillE.png' %}" class="round-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Title</h3>
+						<p class="card-text"> random text random text random text random text random text random text random text random text random text random text random text random text</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="{% static 'toDoList/image/skillE.png' %}" class="round-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Title</h3>
+						<p class="card-text"> random text random text random text random text random text random text random text random text random text random text random text random text</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class='p-5'>
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-md">
+					<h2 class="text-center"> Contact</h2>
+					<ul class="list-group list-group-flush lead">
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location:</span> Some address
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location:</span> Some address
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location:</span> Some address
+						</li>
+						<li class="list-group-item">
+							<span class="fw-bold">Main Location:</span> Some address
+						</li>
+					</ul>
+				</div>
+				<div class="col-md">
+					<img src="{% static 'toDoList/image/skillA.png' %}" class="img-fluid" alt="">
+					<img src="{% static 'toDoList/image/skillA.png' %}" class="img-fluid" alt="">
+					<img src="{% static 'toDoList/image/skillA.png' %}" class="img-fluid" alt="">
+					<img src="{% static 'toDoList/image/skillA.png' %}" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	<footer class="p-5 bg-dark text-white text-center position-relative">
+		<div class="container">
+			<p class="lead"> Copyright &copy; 2021 Frontend Bootcamp </p>
+			<a href="#" class="position-absolute bottom-0 end-0 p-5">
+				<i class="bi bi-arrow-up-circle h1"></i>	
+			</a>
+		</div>
+		
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>

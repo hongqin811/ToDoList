@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{obj}}</h1>
+
+<p> Here below is your ToDoList </p>
+<form action="./add">
+	<input type="submit" value="Add a new work">
+</form>
+
+Due day:
+{% for i in qlist %}
+	<li>{{i.due}}| {{i.description}}</li>
+{% endfor %}
+{% endblock %}

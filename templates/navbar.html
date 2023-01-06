@@ -1,0 +1,64 @@
+<!-- <style>
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+/*		border: 2px solid #e7e7e7;*/
+		background-color: #f3f3f3;
+	}
+
+	li.left {
+		float: left;
+		border-right: 1px solid #ddd;
+	}
+
+	li a.bar {
+		display: block;
+		color: #666;
+		text-align:center;
+		padding: 10px 15px;
+		text-decoration: none;
+	}
+
+	li a.bar:hover:not(.active){
+		background-color: #ddd;
+	}
+
+	li a.bar.active {
+	  color: white;
+	  background-color: #04AA6D;
+	}
+</style>
+ -->
+{% load static %}
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+<div class="container">
+	<a href="/" class="navbar-brand text-info">ToDoList Homepage</a>
+
+	<button 
+		class="navbar-toggler" 
+		type="button"
+		data-bs-toggle="collapse" 
+		data-bs-target="#navmenu">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	 <div class="collapse navbar-collapse" id="navmenu">
+		<ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+				<a  href = '/register/' class="nav-link" >Registration</a>
+			</li>
+			<li class="nav-item">
+				<a href = '/login/' class="nav-link">Login</a>
+			</li>
+			<li class="nav-item">
+				<a  href = '/logout/' class="nav-link">Logout</a>
+			</li>
+			<li class="nav-item">
+				<a  href = '/changepw/' class="nav-link">Change Password</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
